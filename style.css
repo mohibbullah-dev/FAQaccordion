@@ -1,0 +1,255 @@
+
+
+body{
+
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;   
+  font-family:  sans-serif;
+}
+
+.container{
+    width: 1440px;
+    height: 100vh;
+    margin: auto;
+    background: url('./images/background-pattern-desktop.svg');
+    background-repeat: no-repeat;
+   background-size: contain;
+   background-position: top center;
+   background-color: hsl(275, 100%, 97%);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.FAQ_container{
+background-color: hsl(0, 0%, 100%);
+width: 600px;
+margin: 0 0 30px 0;
+padding: 20px;
+border-radius: 20px;
+display: flex;
+flex-direction: column;
+gap: 20px;
+box-shadow: .5px .5px 100px 0px hsl(292deg 16% 49% / 32%);
+}
+
+.logopart{
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    gap: 20px;
+    font-weight: bolder;
+    font-size: 30px;
+
+}
+
+.logopart h1{
+    margin: 0;
+    padding: 0;
+}
+
+.firstQu{
+    display: flex;
+    flex-direction: column; 
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+    text-align: start;
+}
+.FAQ_des{
+    margin: 0;
+    padding: 0;
+ opacity: 0;
+ max-height: 0;
+ transition: max-height 0.5s ease, opacity 0.5s ease;
+ text-align: start;
+ color: hsl(292, 16%, 49%);
+}
+.Q_p{
+    font-size: 15px;
+}
+
+.Q_p:hover{
+ color: #AD28EB;
+
+}
+
+.active {
+    /* color: black;  */
+    opacity: 1;
+    max-height: 200px;
+    padding: 20px 0 20px 0;
+    border-radius: 10px;
+}
+
+
+.q_part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    cursor: pointer;
+}
+/* .q_part svg{
+   
+} */
+
+.q_part .plus_icon{
+    position: absolute;
+    right: 0;
+    top: 0;  
+    z-index: 1;
+    display: block;
+}
+
+.q_part .minus_icon{
+    position: absolute;
+    right: 0;
+    top: 0;  
+    z-index: 0;
+    display: none;
+}
+
+.q_part p{
+margin: 0;
+padding: 0;
+font-size: 20px;
+font-weight: bold;
+color: hsl(292, 42%, 14%);
+}
+
+/* responsive starts from here---------------------------------- */
+/* responsive starts from here---------------------------------- */
+
+
+@media screen and (max-width: 375px){
+
+    
+body{
+
+    margin: 0;
+    padding: 0px;
+ 
+}
+
+    .container{
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        background: url('./images/background-pattern-desktop.svg');
+        background-repeat: no-repeat;
+       background-size: auto;
+       background-position:top center;
+    }
+
+    .FAQ_container{
+        background-color: hsl(0, 0%, 100%);
+        width: 100%;
+        margin: 0 20px 0 20px;
+        }
+
+
+        .logopart{
+            display: flex;
+            justify-content: stretch;
+            align-items: center;
+            gap: 20px;
+            font-weight: bolder;
+            font-size: 20px;
+        
+        }
+
+        .logopart svg{
+            width: 30px;
+            height: 31px;
+        }
+        
+        .logopart h1{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .firstQu{
+            display: flex;
+            flex-direction: column; 
+            margin: 0;
+            padding: 0;
+            gap: 15px;
+            text-align: start;
+        }
+        .FAQ_des{
+            margin: 0;
+            padding: 0;
+         opacity: 0;
+         max-height: 0;
+         transition: max-height 0.5s ease, opacity 0.5s ease;
+         text-align: start;
+         color: hsl(292, 16%, 49%);
+        }
+        .Q_p{
+            font-size: 15px;
+        }
+        
+        .Q_p:hover{
+         color: #AD28EB;
+        
+        }
+        
+        .active {
+            /* color: black;  */
+            opacity: 1;
+            max-height: 200px;
+            padding: 20px 0 20px 0;
+            border-radius: 10px;
+        }
+        
+        .q_part{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            cursor: pointer;
+        }
+        /* .q_part svg{
+           
+        } */
+        
+        .q_part .plus_icon{
+            position: absolute;
+            right: 0;
+            top: 0;  
+            z-index: 1;
+            display: block;
+            width: 20px;
+            height: 21px;
+        }
+        
+        .q_part .minus_icon{
+            position: absolute;
+            right: 0;
+            top: 0;  
+            z-index: 0;
+            display: none;
+            width: 20px;
+            height: 21px;
+        }
+        
+        .q_part p{
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+        font-weight: bold;
+        color: hsl(292, 42%, 14%);
+        }
+        
+        
+
+
+
+}
